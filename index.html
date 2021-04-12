@@ -10,6 +10,141 @@
     <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
-    
+    <header>
+        <div>ALL JOURNAL</div>
+        <nav>
+            <ul>
+                <li><a href="#day_one">Day One</a></li>
+                <li><a href="#day_two">Day Two</a></li>
+                <li><a href="#day_three">Day Three</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Judy's Journal</h1>
+        <details>
+            <summary>Play this song</summary>
+            Music makes you happy!
+        </details>
+        <audio controls>
+            <source src="images/music.ogg" type="audio/ogg">
+            <source src="images/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        <hr>
+        <section>
+            <h2 id="entry">Day 1 Entry</h2>
+            <h3>Daily Goals:</h3>
+                <ol>
+                    <li><input type="checkbox">Going on a run</li>
+                    <li><input type="checkbox">Getting groceries</li>
+                    <li><input type="checkbox">Attending lectures</li>
+                </ol>
+            <h3>Thoughts</h3>
+                <p>
+                    <b>
+                        I have discovered a new walking path in school that leads me to this plaza with many stores including Trader Joes, Whole Foods, and Ralphs. <br>I also watched the sunset while walking, which is pretty nice.
+                    </b>
+                </p>
+                <p>
+                    Ever since moving to SD I did not have the chance to go on a run. <br>I walked today instead, but I hope I can run again in the near future.
+                </p>
+            <hr>
+        </section>
+        <section>
+            <h2 id="entry">Day 2 Entry</h2>
+            <h3>To-do List:</h3>
+                <ul>
+                    <li>Finish <strong>PHYS 2C</strong> Lecture</li>
+                    <li>Read <strong>PHIL 28</strong> Lecture</li>
+                </ul>
+            <h3>Reflection</h3>
+                <p>
+                    I had research meeting today on the topic of <em>Hyperdimensional computing</em>. I think it is an amazing algorithm and like how it is related to the brain. Meeting with CSE 110 Team was also pretty nice, we played scribble.io.
+                </p>
+                <img src="images/icebreaker.png" alt="icebreaker activity with friends" width="600">
+                <p>
+                    <i>I am excited for tomorrow! I am going to hang out with friends!</i>
+                </p>
+            <hr>
+        </section>
+        <section>
+        <h2 id="entry">Day 3 Entry</h2>
+        <h3>HighlightsH of the day</h3>
+            <div>looking at a cute squirrel</div>
+            <div>spending time to paint</div>
+            <div>eating good food</div>
+        <video width="320" controls>
+            <source src="images/squ.ogg" type="video/ogg">
+            <source src="images/squ.mp4" type="video/mp4">
+            Your browser does not support the audio tag.
+        </video>
+        <h3>Reflection</h3>
+        <p>Today has been a relaxing day, I basically did not do anything productive. <br>However</br> I was still enjoying myself so that is good.</p>
+        <hr>
+        </section>
+        <section>
+            <form method="post">
+                <fieldset>
+                    <label>
+                        Today is: <input type="date">
+                    </label><br>
+                    <label>
+                        How was your day? 
+                        <input type="radio"> Good
+                        <input type="radio"> Okay
+                        <input type="radio"> Bad
+                    </label><br>
+                    <label>
+                        What was your goal? <input type="text">
+                    </label><br>
+                    <label>Choose a mood from this list:</label>
+                    <input list="moods" id="myMood" name="myMood"/>
+                    <datalist id="moods">
+                        <option value="Happy">
+                        <option value="Sad">
+                        <option value="Angry">
+                        <option value="Motivated">
+                        <option value="Empty">
+                    </datalist>
+                    <br>
+                    Highlight of your day:
+                    <label>
+                        <input type="file"> Upload an image
+                    </label>
+                    <br>
+                    <label>What did you have for lunch today?</label>
+                    <select>
+                        <option value="">--Please choose an option--</option>
+                        <option>Tacos</option>
+                        <option>Salad</option>
+                        <option>Ice-cream</option>
+                        <option>Burger</option>
+                        <option>Sandwich</option>
+                        <option>Noodles</option>
+                        <option>Other</option>
+                    </select>
+                    <br>
+                    Did you finish your goals today?
+                    <label>
+                        <input type="checkbox"> Yes
+                        <input type="checkbox"> No
+                    </label>
+                    <br>
+                    <label>
+                        Reflect on your day:
+                        <textarea></textarea>
+                    </label>
+                    <br>
+                    <button>Save</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Thanks for visiting the page and listening to my vents. Please contact me at liulexuan886@gmail.com to know more about me. Links are here:
+        <span><a href="https://www.linkedin.com/in/judyliu14/">linkedin</a></span>
+        <span><a href="https://github.com/judyliu14">GitHub</a></span>
+    </footer>
 </body>
 </html>
