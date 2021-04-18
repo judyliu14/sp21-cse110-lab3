@@ -8,20 +8,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div>ALL JOURNAL</div>
         <nav>
-            <ul>
-                <li><a href="#day_one">Day One</a></li>
-                <li><a href="#day_two">Day Two</a></li>
-                <li><a href="#day_three">Day Three</a></li>
+            <ul class="header-container">
+                <li class="header-item"><a href="#day_one">Day 1</a></li>
+                <li class="header-item"><a href="#day_two">Day 2</a></li>
+                <li class="header-item"><a href="#day_three">Day 3</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Judy's Journal</h1>
+        <h1 id="title">Judy's Journal</h1>
         <details>
             <summary>Play this song</summary>
             Music makes you happy!
@@ -70,11 +71,16 @@
         </section>
         <section>
         <h2 id="entry3">Day 3 Entry</h2>
-        <h3>HighlightsH of the day</h3>
-            <div>looking at a cute squirrel</div>
-            <div>spending time to paint</div>
-            <div>eating good food</div>
-        <video width="320" controls>
+        <h3>Highlights of the day</h3>
+            <div class="highlights-container">
+                <div class="highlights-item a">looking at a cute squirrel</div>
+                <div class="highlights-item b">spending time to paint</div>
+                <div class="highlights-item c">eating good food</div>
+                <div class="highlights-item d">watching movie</div>
+                <div class="highlights-item e">dancing to music</div>
+                <div class="highlights-item f">skin-care at night</div>
+            </div>
+        <video controls>
             <source src="images/squ.ogg" type="video/ogg">
             <source src="images/squ.mp4" type="video/mp4">
             Your browser does not support the audio tag.

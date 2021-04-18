@@ -1,0 +1,272 @@
+/* Resetting stylesheet to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. */
+html,
+body,
+div,
+span,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+header,
+footer {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Different Medias*/
+body {
+    background-color: var(--yellow);
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    body {
+        background-color: aliceblue;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-color: var(--blue);
+    }
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Open+Sans&display=swap');
+
+/* General CSS */
+
+:root {
+    --bright-orange: #f55d3e;
+    --yellow: hsl(48, 93%, 53%);
+    --light-yellow: hsla(48, 93%, 53%, 0.5);
+    --blue: #76bed0;
+    --white: #ffffff;
+    --grey: rgb(135, 142, 136);
+    --light-grey: rgb(135, 142, 136, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    background: yellow;
+}
+
+a:active {
+    color: var(--grey);
+}
+
+p:active {
+    background: var(--light-grey);
+}
+
+header {
+    padding: 2cm;
+    font-family: 'Antonio', sans-serif;
+    text-shadow: 1px 4px 4px var(--light-grey);
+    text-align: center;
+    background: var(--bright-orange);
+    color: white;
+    font-size: 30px;
+    position: static;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-item {
+    background: rgba(250, 250, 250, 0.4);
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.highlights-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+        'a b c d'
+        'a e f f'
+    ;
+    margin: 30px 30px;
+}
+
+.highlights-item {
+    background-color: var(--bright-orange);
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.highlights-item:hover {
+    background-color: lightblue
+}
+
+.a {
+    grid-area: a;
+    line-height: 120px;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1 {
+    border-width: thick;
+    border-color: var(--blue);
+    border-style: double;
+    border-radius: 1mm;
+    color: var(--blue);
+    font-size: 1.5cm;
+    text-align: center;
+    text-decoration: underline overline;
+    margin: 3rem 3rem 3rem 3rem;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+}
+
+h2 {
+    border-width: thick;
+    border-color: var(--blue);
+    border-style: double;
+    border-radius: 1mm;
+    color: var(--blue);
+    font-size: 3ex;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h3 {
+    font-size: 2.5ex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    display: block;
+}
+
+audio {
+    position: relative;
+    width: 90vw;
+    height: 80px;
+    padding: auto;
+    vertical-align: middle;
+}
+
+#title {
+    background-color: aliceblue;
+}
+
+#title:hover {
+    background-color: white;
+}
+
+#entry1 {
+    background-color: aliceblue;
+}
+
+#entry1:hover {
+    background-color:rgb(196, 227, 255);
+}
+
+#entry2 {
+    background-color: antiquewhite;
+}
+
+#entry2:hover {
+    background-color: rgb(250, 220, 180);
+}
+
+#entry3 {
+    background-color: seashell;
+}
+
+#entry3:hover {
+    background-color: rgb(255, 208, 174);
+}
+
+audio {
+    align-self: center;
+    position: sticky;
+}
+
+img {
+    max-width: 80vw;
+}
+
+video {
+    display: block;
+    margin: auto;
+    max-height: 80vh;
+}
+
+footer {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--light-grey);
+    font-size: small;
+    font-weight: bold;
+    padding: 10px 10px;
+    bottom: 0px;
+}
+
+span {
+    display: inline-block;
+}
