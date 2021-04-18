@@ -61,8 +61,12 @@ a {
     color: aliceblue;
 }
 
+a[href^="#"] {
+    background-color: gold;
+  }
+
 a:hover {
-    background: yellow;
+    background: var(--blue);
 }
 
 a:active {
@@ -71,6 +75,15 @@ a:active {
 
 p:active {
     background: var(--light-grey);
+}
+
+p::first-line {
+    text-decoration: overline;
+}
+
+p em {
+    text-decoration: underline;
+    text-shadow: .2px 2px 2px black;
 }
 
 header {
@@ -84,7 +97,7 @@ header {
     position: static;
 }
 
-.header-container {
+ul.header-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -95,7 +108,7 @@ header {
     list-style: none;
 }
 
-.header-item {
+li.header-item {
     background: rgba(250, 250, 250, 0.4);
     padding: 5px;
     width: 200px;
@@ -257,6 +270,12 @@ video {
     max-height: 80vh;
 }
 
+#form {
+    color: var(--bright-orange);
+    border-color: var(--bright-orange);
+    background-color: var(--yellow);
+}
+
 footer {
     position: -webkit-sticky;
     position: sticky;
@@ -267,6 +286,28 @@ footer {
     bottom: 0px;
 }
 
+footer > p {
+    margin: 0;
+    display: inline;
+}
+
+footer > p::first-line {
+    text-decoration: none;
+}
+
 span {
     display: inline-block;
+}
+
+p + span {
+    background-color: var(--bright-orange);
+}
+
+/* Form elements */
+input ~ label {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: aliceblue;
 }
